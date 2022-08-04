@@ -1,0 +1,64 @@
+.banner{
+    
+    position:relative;
+    object-fit: contain;
+    /*448  or 360 or 530*/
+    height: 530px;
+    width: 100%;
+    color: white;
+    /* background-repeat: no-repeat; */
+}
+
+.banner_contents{
+    margin-left: 30px;
+    padding-top: 200px;
+    height: 200px;
+}
+.banner_title{
+    font-size: 2.8rem;
+    font-weight: 800; 
+    padding-bottom: 6px;
+}
+.banner_description{
+    padding-top: 16px;
+    width: 800px;
+    max-width: 400px;
+    font-size: 14px;
+    line-height: 1.5;
+
+    
+  /* text-overflow: ellipsis; wqe could use this ellipsis to truncate but when it only gives the ... for single line */
+    
+
+
+}
+.banner_button{
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgb(237, 227, 227);
+    border: none;
+    outline: none;
+    font-weight: 500;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.4vw;
+    margin-right: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    background-color: rgb(51, 50, 50);
+
+}
+.banner_button:hover{
+    background-color: white;
+    color: rgb(51, 50, 50);
+    transition: all 0.4s;
+}
+.banner_description{
+    color: whitesmoke;
+}
+.fade_bottom{
+    /* 70px  */
+    margin-top: 30px;
+    height: 100px;
+    background-image: linear-gradient(180deg , transparent ,   rgb(25, 25, 20) , #111);
+}
