@@ -19,12 +19,15 @@
 .nav_contents{
     display: flex;
     justify-content: space-between;
+    
 }
 .nav_black{
     background-color: black;
  
 }
-
+.moviespage{
+    color: red;
+}
 
 .nav_logo{
     position: fixed;

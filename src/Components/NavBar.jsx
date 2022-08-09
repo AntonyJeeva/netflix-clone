@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import '../Styles/NavBar.css'
-
+import {NavLink, Link} from 'react-router-dom'
 
 
 
@@ -26,10 +26,14 @@ function NavBar() {
   return (
     <div className= {`navbar ${show && `nav_black`}`}>
       <div className="nav_contents">
+        {/* <NavLink className= 'moviespage' to= "movies" > Movies  </NavLink>
+        <NavLink to= "tvshows" > TV Shows  </NavLink> */}
+
         <img className='nav_logo' src='https://cdn.discordapp.com/attachments/560666490832027656/1002226762798866502/580b57fcd9996e24bc43c529_1.png'
         alt='netflix_logo' ></img>
         
-        
+       {/*  <button>Movies</button> */}
+
         <img className='nav_avatar_pic' src='https://archive.org/download/profiles_202104/penguin.png'
         alt='profile_avatar'></img>
 

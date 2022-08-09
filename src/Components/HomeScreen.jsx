@@ -6,9 +6,10 @@ import Row from "./Row";
 import requests from "../API/requests";
 
 function HomeScreen() {
+  /* console.log('homescreen rendered') */
   return (
     <div className="homescreen">
-      <NavBar />
+      <NavBar /> 
       <Banner />
       <Row
         title="Netflix Originals"
