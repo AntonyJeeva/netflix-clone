@@ -13,25 +13,18 @@ import { logout, login, selectUser } from './features/userSlice';
 import {  toast } from 'react-toastify';
 
 import "react-toastify/dist/ReactToastify.css";
+import Profile from './Components/Profile';
 
 function App() {
 
   const notify= ()=>{
-    toast.info('Incase if you are seeing dead link/images, please refresh your browser a few times', 
+    toast.info('Incase if you are seeing dead link/images, please refresh your browser few times', 
     {
       toastId: 'info1',
       position: toast.POSITION.TOP_CENTER,
-      autoClose: false
-      
-    },
-   
-    
-  )
-
-    /* toast.warn('ggwp') */
-   }
+      autoClose: false},
+    )}
  
-
     const user = useSelector(selectUser);
     
     const dispatch = useDispatch();
@@ -45,16 +38,14 @@ function App() {
           uid: userAuth.uid,
           email: userAuth.email,
         })  )
-
-
       }
       else {
-          dispatch(logout)
+          dispatch(logout())
       }
     })
 
     return unsubscribe;
-  }, [])
+  }, [dispatch])
 
   return (
     <div className="app">
@@ -64,7 +55,8 @@ function App() {
                  
             <Routes>
             <Route path = '/' element = {<HomeScreen /> } render = {notify()}  > </Route>
-            
+            <Route path = 'profile' element = {<Profile />} ></Route>
+            <Route path ='movies' element = {<MoviesPage />} ></Route>
           </Routes>
           
        }

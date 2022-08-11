@@ -1,6 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-/* import { act } from 'react-dom/test-utils';
-import { fetchCount } from './counter/counterAPI'; */
+
 
 
 export const userSlice = createSlice({

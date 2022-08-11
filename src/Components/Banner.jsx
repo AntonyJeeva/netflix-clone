@@ -2,18 +2,16 @@ import React, { useEffect, useState } from "react";
 import "../Styles/Banner.css";
 import axios from "../API/axios";
 import requests from "../API/requests";
+/* import ReactPlayer from "react-player";
 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer, toast } from "react-toastify"; */
 
 import "react-toastify/dist/ReactToastify.css";
-import Modal from "./Modal";
+/* import Modal from "./Modal"; */
 
 function Banner() {
+  const [openModal, setOpenModal] = useState(false);
 
-  const info = () => {
-    toast.info('ggwp')
-  }
-  
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
@@ -30,14 +28,16 @@ function Banner() {
     fetchData();
   }, []);
 
-
-
   console.log(movie);
 
   //truncate function to get the ellipsis css property kinda look
   function truncate(string, n) {
     return string?.length > n ? string.substring(0, n - 1) + "..." : string;
   }
+
+  const videoplayer = () => {
+    console.log("video playing");
+  };
 
   return (
     <header
@@ -54,11 +54,21 @@ function Banner() {
           {movie?.title || movie?.name || movie?.original_name}{" "}
         </h1>
         <div className="banner_buttons">
-          <button className="banner_button">Play</button>
+          <button className="banner_button" onClick={videoplayer}>
+            Play
+          </button>
 
-          <Modal />
-          
-          <button className="banner_button" onClick={info} > More info</button>
+          <button
+            className="banner_button"
+            onClick={() => {
+              setOpenModal(true);
+            }}
+          >
+            {" "}
+            More info
+          </button>
+
+          {/*  {openModal && <Modal closeModal={setOpenModal} />} */}
         </div>
         <div className="banner_description">
           {truncate(movie?.overview, 190)}{" "}

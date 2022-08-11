@@ -1,11 +1,12 @@
 import React from 'react'
+import '../Styles/MoviesPage.css'
 
 function MoviesPage() {
     /* console.log("movie page rendered"); */
   return (
     
-    <div>
-        <h1 className='test-movie'>This is the Movies Page</h1>
+    <div className='movies-page'>
+        <h1 >This is the Movies Page</h1>
         
     </div>
     

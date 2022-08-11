@@ -1,0 +1,31 @@
+.modal {
+  width: 500px;
+  height: 300px;
+  margin-left: 500px;
+  background-color: rgba(200, 200, 200);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.modal-close-btn {
+  display: flex;
+  justify-content: flex-end;
+
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+
+  position: fixed;
+
+  margin-top: 10px;
+}

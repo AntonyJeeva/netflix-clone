@@ -1,79 +1,68 @@
-
-
-
-.signIn{
-
-    /* display: flex;
+.signIn {
+  /* display: flex;
     flex-direction: column; */
-   
-    max-width: 400px;
-    padding: 70px;
-    padding-top: 50px;
-    /* padding-left: 270px; */
-    margin-left: 270px;
-    height: 310px;
-    background: rgb(0, 0, 0, 0.7);
-    border-radius: 10px;
-    
-    position:  fixed; /* absolute; */
-    
-      
+
+  max-width: 400px;
+  padding: 70px;
+  padding-top: 50px;
+  /* padding-left: 270px; */
+  margin-left: 270px;
+  height: 310px;
+  background: rgb(0, 0, 0, 0.7);
+  border-radius: 10px;
+
+  position: fixed; /* absolute; */
 }
-.signIn > h1{
-     
-      
-       text-align: center;
-       padding-bottom: 10px;
+.signIn > h1 {
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .signIn > form {
-    display: flex;
-    flex-direction: column;
-    
+  display: flex;
+  flex-direction: column;
 }
 
 .signIn > form > input {
-    padding: 10px;
-    margin: 10px;
-    border: none;
-    width: 300px;
-    border-radius: 5px;
-    outline: none;
-    height: 30px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  width: 300px;
+  border-radius: 5px;
+  outline: none;
+  height: 30px;
 }
 
+.signIn > form > button {
+  padding: 10px;
+  margin: 10px;
+  width: 250px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: #e50914;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.5s;
+  height: 50px;
 
-
-.signIn > form > button{
-    padding: 10px;
-    margin: 10px;
-    width: 250px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #e50914;
-    font-weight: 500;
-    cursor: pointer;
-    transition: 0.5s;
-    height: 50px;
-    
-    margin-left: 50px;
-    margin-top: 15px;
-    /* text-align: center; */
+  margin-left: 50px;
+  margin-top: 15px;
+  /* text-align: center; */
 }
 
-h4{
-    padding-top: 20px;
-    
-    font-weight: lighter;
-    text-align: center;
+h4 {
+  padding-top: 20px;
+
+  font-weight: lighter;
+  text-align: center;
 }
-.newtonetflix{
-    color: gray;
+.newtonetflix {
+  color: gray;
 }
 
-.register:hover{
-    cursor: pointer;
-    text-decoration: underline;
+.register:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

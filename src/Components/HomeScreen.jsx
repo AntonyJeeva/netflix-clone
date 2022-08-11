@@ -12,9 +12,9 @@ import "react-toastify/dist/ReactToastify.css";
 
 function HomeScreen() {
   /* console.log('homescreen rendered') */
-  const notify= ()=>{
+/*   const notify= ()=>{
    toast.warn('ggwp')
-  }
+  } */
 
   return (
     

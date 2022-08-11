@@ -1,46 +1,43 @@
-*{
-    margin: 0%;
+* {
+  margin: 0%;
 }
 
-.navbar{
-    position: fixed;
-    top: 0;
-    height: 60px;
-    width: 100%;
-    z-index: 1;
-    object-fit: contain;
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+  object-fit: contain;
 
-    /* animation*/
-    transition-timing-function: ease-in;
-    transition: all 0.5s;
-}
-
-
-.nav_contents{
-    display: flex;
-    justify-content: space-between;
-    
-}
-.nav_black{
-    background-color: black;
- 
-}
-.moviespage{
-    color: red;
+  /* animation*/
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
 }
 
-.nav_logo{
-    position: fixed;
-    width: 100px;
-   
-    left: 20px;
-    cursor: pointer;
+.nav_contents {
+  display: flex;
+  justify-content: space-between;
 }
-.nav_avatar_pic{
-    position: fixed;
-    width: 35px;
-    height: 35px;
-    right: 20px;
-    cursor: pointer;
-    padding-top: 10px;
+.nav_black {
+  background-color: black;
+}
+.moviespage {
+  color: red;
+}
+
+.nav_logo {
+  position: fixed;
+  width: 100px;
+
+  left: 20px;
+  cursor: pointer;
+}
+.nav_avatar_pic {
+  position: fixed;
+  width: 35px;
+  height: 35px;
+  right: 20px;
+  cursor: pointer;
+  padding-top: 10px;
 }
