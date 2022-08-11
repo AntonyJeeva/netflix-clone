@@ -1,6 +1,10 @@
+
+
+
 .signIn{
-    /* display: flex; */
-   /*  flex-direction: column; */
+
+    /* display: flex;
+    flex-direction: column; */
    
     max-width: 400px;
     padding: 70px;
@@ -11,7 +15,8 @@
     background: rgb(0, 0, 0, 0.7);
     border-radius: 10px;
     
-    position: absolute;
+    position:  fixed; /* absolute; */
+    
       
 }
 .signIn > h1{

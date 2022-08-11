@@ -5,10 +5,22 @@ import Banner from "./Banner";
 import Row from "./Row";
 import requests from "../API/requests";
 
+import { ToastContainer, toast } from 'react-toastify';
+
+import "react-toastify/dist/ReactToastify.css";
+
+
 function HomeScreen() {
   /* console.log('homescreen rendered') */
+  const notify= ()=>{
+   toast.warn('ggwp')
+  }
+
   return (
+    
     <div className="homescreen">
+    {/* {notify()} */}
+      
       <NavBar /> 
       <Banner />
       <Row

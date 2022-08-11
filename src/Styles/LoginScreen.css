@@ -1,3 +1,5 @@
+
+
 .login-screen{
     color: white;
     height: 100%;
@@ -10,7 +12,7 @@
     background-position: center;
     width: 100%;
 
-   
+    
 
 }
 
@@ -48,6 +50,7 @@ height: 100vh;
     z-index: 1;
     padding-top: 5px;
     padding-left: 250px;
+   
     top: 30%;
     position: absolute;
 

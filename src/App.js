@@ -10,7 +10,28 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logout, login, selectUser } from './features/userSlice';
 
 
+import {  toast } from 'react-toastify';
+
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
+
+  const notify= ()=>{
+    toast.info('Incase if you are seeing dead link/images, please refresh your browser a few times', 
+    {
+      toastId: 'info1',
+      position: toast.POSITION.TOP_CENTER,
+      autoClose: false
+      
+    },
+   
+    
+  )
+
+    /* toast.warn('ggwp') */
+   }
+ 
+
     const user = useSelector(selectUser);
     
     const dispatch = useDispatch();
@@ -40,10 +61,12 @@ function App() {
        
        <BrowserRouter>
        {!user ? <LoginScreen /> :
+                 
             <Routes>
-            <Route path = '/' element = {<HomeScreen /> }> </Route>
+            <Route path = '/' element = {<HomeScreen /> } render = {notify()}  > </Route>
             
           </Routes>
+          
        }
        
       </BrowserRouter>

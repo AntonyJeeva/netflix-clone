@@ -3,7 +3,17 @@ import "../Styles/Banner.css";
 import axios from "../API/axios";
 import requests from "../API/requests";
 
+import { ToastContainer, toast } from 'react-toastify';
+
+import "react-toastify/dist/ReactToastify.css";
+import Modal from "./Modal";
+
 function Banner() {
+
+  const info = () => {
+    toast.info('ggwp')
+  }
+  
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
@@ -20,7 +30,9 @@ function Banner() {
     fetchData();
   }, []);
 
-/*   console.log(movie); */
+
+
+  console.log(movie);
 
   //truncate function to get the ellipsis css property kinda look
   function truncate(string, n) {
@@ -43,7 +55,10 @@ function Banner() {
         </h1>
         <div className="banner_buttons">
           <button className="banner_button">Play</button>
-          <button className="banner_button"> More info</button>
+
+          <Modal />
+          
+          <button className="banner_button" onClick={info} > More info</button>
         </div>
         <div className="banner_description">
           {truncate(movie?.overview, 190)}{" "}
