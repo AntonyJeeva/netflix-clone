@@ -34,7 +34,10 @@ function NavBar() {
           }}
           alt="netflix_logo"
         ></img>
-
+        <button className="movie-btn" onClick={() => {
+            navigate("/movies")}} >Movies</button>
+            <button className="tvshow-btn" onClick={() => {
+            navigate("/tvshows")}} >TV Shows</button>
         <img
           className="nav_avatar_pic"
           src="https://archive.org/download/profiles_202104/penguin.png"

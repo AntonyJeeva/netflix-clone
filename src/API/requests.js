@@ -16,6 +16,17 @@ const requests = {
     fetchHorror: `/discover/movie?api_key=${API_KEY}&with_genres=27`,
     fetchRomance: `/discover/movie?api_key=${API_KEY}&with_genres=10749`, 
     fetchDocumentaries: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
+
+
+    //TV Requests
+    tvTrending: `/trending/tv/week?api_key=${API_KEY}&include_adult=false`,
+    tvTopRated: `/tv/top_rated?api_key=${API_KEY}&language=en-US`,
+    tvNetflix: `/discover/tv?api_key=${API_KEY}&with_networks=213`,
+    tvDocumentary: `/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&with_genres=99`,
+    tvAnimation: `/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&with_genres=16`,
+    tvAdventure: `/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&with_genres=10759`,
+    tvComedy: `/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&with_genres=35`,
+    tvDrama: `/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=true&with_genres=18`,
 }
 
 export default requests;

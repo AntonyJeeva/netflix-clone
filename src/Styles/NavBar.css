@@ -41,3 +41,26 @@
   cursor: pointer;
   padding-top: 10px;
 }
+
+.movie-btn, .tvshow-btn{
+ /*  background-color: rgb(109, 106, 106); */
+  background-color: Transparent;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 150px;
+  margin-top: 10px;
+  border-radius: 5px;
+  /* border-color: currentColor; */
+  position: fixed;
+  
+  outline: none;
+  cursor: pointer;
+}
+
+.movie-btn:hover, .tvshow-btn:hover{
+  background-color: rgb(109, 106, 106); 
+}
+
+.tvshow-btn{
+  margin-left: 250px;
+}

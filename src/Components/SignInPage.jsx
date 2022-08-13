@@ -11,8 +11,24 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function SignInPage() {
+
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
+
+  const infopopup = () =>{
+    toast.info('You can either create an account or sign in using the test account. Email: test@gmail.com  Password: test123',
+    {
+      toastId: 'info2',
+      position: toast.POSITION.BOTTOM_CENTER,
+      autoClose: 15000,
+    }
+    )
+    
+  }
+  infopopup();
+
+
+
 
   const register = async (e) => {
     e.preventDefault();
@@ -85,6 +101,8 @@ function SignInPage() {
 
         <ToastContainer autoClose={2000} />
       </form>
+
+
     </div>
   );
 }

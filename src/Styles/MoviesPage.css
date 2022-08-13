@@ -1,5 +1,9 @@
 .movies-page{
-    padding: 50px;
-    text-align: center;
+    /* padding: 50px; */
+   /*  text-align: center; */
     height: 100%
+}
+
+.movies-list{
+    padding-top: 70px;
 }

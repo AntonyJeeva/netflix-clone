@@ -4,6 +4,7 @@ import HomeScreen from './Components/HomeScreen';
 import {BrowserRouter , Routes, Route} from 'react-router-dom';
 import NavBar from './Components/NavBar'
 import MoviesPage from './Components/MoviesPage';
+import TvShows from './Components/TvShows';
 import LoginScreen from './Components/LoginScreen';
 import { auth } from './Firebase-config';
 import { useDispatch, useSelector } from 'react-redux';
@@ -57,6 +58,7 @@ function App() {
             <Route path = '/' element = {<HomeScreen /> } render = {notify()}  > </Route>
             <Route path = 'profile' element = {<Profile />} ></Route>
             <Route path ='movies' element = {<MoviesPage />} ></Route>
+            <Route path = 'tvshows' element = {<TvShows />} > </Route>
           </Routes>
           
        }

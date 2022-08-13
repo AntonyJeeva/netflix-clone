@@ -1,0 +1,40 @@
+.home-footer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.home-footer>button{
+    background-color: white;
+  color: rgb(9, 9, 9);
+  padding: 8px 16px;
+ /*  margin-left: 150px;
+  margin-top: 10px; */
+  border-radius: 5px;
+  /* border-color: currentColor; */
+  /* position: fixed; */
+  
+  outline: none;
+  cursor: pointer;
+}
+
+.home-footer>button:hover{
+    background-color: rgb(5, 5, 5); 
+    color: white;
+  }
+
+.home-footer>h3{
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.icon2{
+    padding: 10px;
+    transform: scale(1.2);
+}
