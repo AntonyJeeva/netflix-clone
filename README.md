@@ -9,7 +9,10 @@ Also implemented login functionality with Email and Password using Firebase.
 
 Vercel URL - https://netflix-clone-ten-swart.vercel.app/
 
-## Contact - Discord - Skibidi#1771 
+## Contact -
+
+Email - antonyjeeva29@gmail.com 
+Discord - Skibidi#1771 
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
