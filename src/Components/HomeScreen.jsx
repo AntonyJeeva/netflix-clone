@@ -25,6 +25,7 @@ function HomeScreen() {
     {/* {notify()} */}
       
       <NavBar /> 
+      <div>
       <Banner />
       <Row
         title="Netflix Originals"
@@ -34,14 +35,7 @@ function HomeScreen() {
       <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
 
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-      {/* <Row title="Action" fetchUrl={requests.fetchAction} />
-      <Row title="Crime " fetchUrl={requests.fetchCrime} />
-      <Row title="Animation" fetchUrl={requests.fetchAnimation} />
-
-      <Row title="ComedyMovies" fetchUrl={requests.fetchComedy} />
-      <Row title="HorrorMovies" fetchUrl={requests.fetchHorror} />
-      <Row title="Romance" fetchUrl={requests.fetchRomance} />
-      <Row title="Documentaries" fetchUrl={requests.fetchDocumentaries} /> */}
+      </div>
 
       <div className="home-footer">
         <button onClick={() => {

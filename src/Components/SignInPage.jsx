@@ -15,7 +15,7 @@ function SignInPage() {
   const [registerEmail, setRegisterEmail] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
 
-  const infopopup = () =>{
+  /* const infopopup = () =>{
     toast.info('You can either create an account or sign in using the test account. Email: test@gmail.com  Password: test123',
     {
       toastId: 'info2',
@@ -23,9 +23,9 @@ function SignInPage() {
       autoClose: 15000,
     }
     )
-    
-  }
-  infopopup();
+   return  infopopup();
+  } */
+  
 
 
 
