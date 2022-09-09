@@ -2,9 +2,13 @@
 
 const API_KEY= process.env.REACT_APP_API_KEY
 
+
+
 const requests = {
     /* fetchTrending: `https://api.themoviedb.org/3/trending/all/day?api_key=${API_KEY}&language=en-US`, */
     video: `/videos?api_key=${API_KEY}&language=en-US`,
+
+    /* fetchBanner: 'https://api.themoviedb.org/3/movie/550?api_key=', */
 
     fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`, 
     fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,

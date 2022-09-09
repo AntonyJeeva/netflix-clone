@@ -7,10 +7,11 @@ import requests from "../API/requests";
 import { ToastContainer, toast } from "react-toastify"; */
 
 import "react-toastify/dist/ReactToastify.css";
+/* import requestsba from "../API/requestsba"; */
 /* import Modal from "./Modal"; */
 
 function Banner() {
-  const [openModal, setOpenModal] = useState(false);
+  /* const [openModal, setOpenModal] = useState(false); */
 
   const [movie, setMovie] = useState([]);
 
@@ -28,16 +29,14 @@ function Banner() {
     fetchData();
   }, []);
 
-  console.log(movie);
+ /*  console.log(movie); */
 
   //truncate function to get the ellipsis css property kinda look
   function truncate(string, n) {
     return string?.length > n ? string.substring(0, n - 1) + "..." : string;
   }
 
-  const videoplayer = () => {
-    console.log("video playing");
-  };
+
 
   return (
     <header
@@ -54,16 +53,12 @@ function Banner() {
           {movie?.title || movie?.name || movie?.original_name}{" "}
         </h1>
         <div className="banner_buttons">
-          <button className="banner_button" onClick={videoplayer}>
+          <button className="banner_button" /* onClick={videoplayer} */>
             Play
           </button>
 
           <button
-            className="banner_button"
-            onClick={() => {
-              setOpenModal(true);
-            }}
-          >
+            className="banner_button">
             {" "}
             More info
           </button>

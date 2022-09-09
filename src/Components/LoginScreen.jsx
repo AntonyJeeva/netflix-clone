@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Styles/LoginScreen.css";
 import SignInPage from "./SignInPage";
-import { ToastContainer, toast } from "react-toastify";
+/* import { ToastContainer, toast } from "react-toastify"; */
 
 function LoginScreen() {
   const [signIn, setSignIn] = useState(false);

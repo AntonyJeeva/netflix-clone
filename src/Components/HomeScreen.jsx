@@ -6,35 +6,34 @@ import Row from "./Row";
 import requests from "../API/requests";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
-import { ToastContainer, toast } from "react-toastify";
+/* import { ToastContainer, toast } from "react-toastify"; */
 
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router";
+/* import requestsba from "../API/requestsba"; */
+
+
+
 
 function HomeScreen() {
-  /* console.log('homescreen rendered') */
-  /*   const notify= ()=>{
-   toast.warn('ggwp')
-  } */
+ 
 
   const navigate = useNavigate();
   return (
     <div className="homescreen">
-      {/* {notify()} */}
-
+       
       <NavBar />
-      <div>
+      
         <Banner />
+        
         <Row
           title="Netflix Originals"
           fetchUrl={requests.fetchNetflixOriginals}
-          isLargeRow
-        />
+          isLargeRow />
         <Row title="Trending Now" fetchUrl={requests.fetchTrending} />
 
-        <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
-      </div>
-
+        {/* <Row title="Top Rated" fetchUrl={requests.fetchTopRated} /> */}
+        
       <div className="home-footer">
         <button
           onClick={() => {

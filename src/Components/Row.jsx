@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import "../Styles/Row.css";
 import axios from "../API/axios";
 
+
+/* import 'react-lazy-load-image-component/src/effects/blur.css'; */
+
 function Row({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
 
@@ -26,19 +29,23 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
       <h2 className="row_title">{title} </h2>
 
       <div className="row_posters">
+        
         {movies.map(
           (movie) =>
             ((isLargeRow && movie.poster_path) ||
               (!isLargeRow && movie.backdrop_path)) && (
               /* conditional rendering just so we dont get dead links / dead img poster*/
-              <img
-                className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+              <img loading="lazy"
+              
+                        className={`row_poster ${isLargeRow && "row_posterLarge"}`}
                 key={movie.id}
                 src={`${base_url}${
                   isLargeRow ? movie.poster_path : movie.backdrop_path
                 }`}
                 alt={movie.name}
               />
+
+
             )
         )}
       </div>

@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import './App.css';
 import HomeScreen from './Components/HomeScreen';
 import {BrowserRouter , Routes, Route} from 'react-router-dom';
-import NavBar from './Components/NavBar'
 import MoviesPage from './Components/MoviesPage';
 import TvShows from './Components/TvShows';
 import LoginScreen from './Components/LoginScreen';
@@ -19,7 +18,7 @@ import Profile from './Components/Profile';
 function App() {
 
   const notify= ()=>{
-    toast.info('Incase if you are seeing dead link/images, please refresh your browser few times', 
+    toast.info('Incase if you are seeing dead link/images, please refresh your browser few times. (I am working on optimizing it)', 
     {
       toastId: 'info1',
       position: toast.POSITION.TOP_CENTER,
