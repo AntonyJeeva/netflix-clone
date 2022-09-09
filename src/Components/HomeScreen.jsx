@@ -13,10 +13,7 @@ import { useNavigate } from "react-router";
 /* import requestsba from "../API/requestsba"; */
 
 
-
-
 function HomeScreen() {
- 
 
   const navigate = useNavigate();
   return (
