@@ -7,6 +7,9 @@ It will fetch the movies from the TMDB database and list them based on the genre
 Also implemented login functionality with Email and Password using Firebase. 
 
 
+<img src="https://user-images.githubusercontent.com/44425375/189468531-391fd764-6256-4438-a64a-4c187fee647d.png" width="800" height="500">
+
+
 Vercel URL - https://netflix-clone-ten-swart.vercel.app/
 
 ## Contact -
