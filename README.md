@@ -15,6 +15,10 @@ Also implemented login functionality with Email and Password using Firebase.
 
 ![2](https://user-images.githubusercontent.com/44425375/216762565-e8d07b64-c26b-4bfb-845f-8a2f0b0b11d7.PNG)
 
+![netflixproject2](https://user-images.githubusercontent.com/44425375/216762707-8ffb20d9-1739-4a00-91f4-8e76ff0e1b4a.PNG)
+![netflixlogin](https://user-images.githubusercontent.com/44425375/216762713-41e8d8f4-2e1d-4733-8ae7-8eff9d356adc.PNG)
+
+
 ![peroject gif 2](https://user-images.githubusercontent.com/44425375/216762586-9311a6d1-95b6-4538-8b1f-4f87cf00e0f9.gif)
 
 
